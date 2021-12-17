@@ -1,0 +1,14 @@
+# Ubuntu version
+os: linux
+dist: focal
+
+# Language Used to Develop the Application                                                                                                                                                       
+language: python                                                                                                                                                                                         
+
+# Version that the application supports                                                                                                                                                                        
+python:                                                                                                                                                                                                  
+  - "3.8"                                                                                                                                                                                              
+
+# Installation of Modules that are required for the Application                                                                                                                                           
+install:                                                                                                                                                                                                 
+  - pip install flask pytest
