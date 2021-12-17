@@ -2,7 +2,7 @@
 os: linux
 dist: focal
 
-# Language Used to Develop the Application                                                                                                                                                       
+# Language used to develop the application                                                                                                                                                       
 language: python                                                                                                                                                                                         
 
 # Version that the application supports                                                                                                                                                                        
