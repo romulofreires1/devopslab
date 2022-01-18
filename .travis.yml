@@ -7,7 +7,12 @@ language: python
 
 # Version that the application supports                                                                                                                                                                        
 python:                                                                                                                                                                                                  
-  - "3.8"                                                                                                                                                                                              
+  - "3.8"
+
+addons:
+  sonarcloud:
+    organization: romulofreires1
+    token: ${SONAR_TOKEN}                                                                                                                                                                                              
 
 # Installation of Modules that are required for the Application                                                                                                                                           
 install:                                                                                                                                                                                                 
@@ -16,3 +21,4 @@ install:
 # Defines the Test script that should run every time the code is changed                                                                                                                            
 script:                                                                                                                                                                                                  
   - pytest -v test.py
+  - sonar-scanner || travis_terminate 1;
